@@ -10,17 +10,19 @@
     <div class="calculator">
         <div class="calc-tittle">
             <div class="calc-text">
-                <h2 style="color: white">Calculator</h2>
+                <h2>Calculator</h2>
             </div>
-            <div class="theme-toggle">
-                    <label class="toggle-option" for="theme-toggle-1">1</label>
+                <div class="theme-toggle">
                     <input type="radio" id="theme-toggle-1" name="btn" value="1">
-                    <label class="toggle-option" for="theme-toggle-2">2</label>
+                    <label class="toggle-option" for="theme-toggle-1">1</label>
+                
                     <input type="radio" id="theme-toggle-2" name="btn" value="2">
-                    <label class="toggle-option" for="theme-toggle-3">3</label>
+                    <label class="toggle-option" for="theme-toggle-2">2</label>
+                
                     <input type="radio" id="theme-toggle-3" name="btn" value="3">
-
-                <div class="toggle-indicator"></div>
+                    <label class="toggle-option" for="theme-toggle-3">3</label>
+                
+                    <div class="toggle-indicator"></div>
             </div>
         </div>
 
@@ -30,12 +32,12 @@
 
         <div class="calc-container">
             <div class="row">
-                <button class="for-pc" onclick="backspc()">CE</button>
+                <button id="backspace-btn" class="for-pc" onclick="backspc()">CE</button>
                 <button class="for-pc" onclick="fact()">x!</button>
                 <button class="btn">(</button>
                 <button class="btn">)</button>
                 <button onclick="div100()">%</button>
-                <button onclick="screen.value=''">AC</button>
+                <button id="clear-button" onclick="screen.value=''">AC</button>
             </div>
             <div class="row">
                 <button class="for-pc" onclick="sin()">sin</button>
