@@ -8,6 +8,24 @@ document.addEventListener('DOMContentLoaded', () => {
             screen.value += btntext;
         });
     }
+
+    // Theme Toggle
+    const themeToggle1 = document.getElementById('theme-toggle-1');
+    const themeToggle2 = document.getElementById('theme-toggle-2');
+    const themeToggle3 = document.getElementById('theme-toggle-3');
+    const calculator = document.querySelector('.calculator');
+
+    themeToggle1.addEventListener('change', () => {
+        calculator.className = 'calculator theme-1';
+    });
+
+    themeToggle2.addEventListener('change', () => {
+        calculator.className = 'calculator theme-2';
+    });
+
+    themeToggle3.addEventListener('change', () => {
+        calculator.className = 'calculator theme-3';
+    });
 });
 
 var screen = document.getElementById('screen');
